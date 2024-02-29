@@ -41,6 +41,16 @@ const Navbar = () => {
             {NAV_ITEMS.map((item, idx) => {
               return <a key={idx}>{item.label}</a>
             })}
+            {currentTheme === "dark" ? (
+              <button>
+                <RiSunLine />
+              </button>
+              ) : (
+              <button>
+                <RiMoonFill />
+              </button>
+              )}
+    
           </div>
         </div>
     </header>
